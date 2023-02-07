@@ -6,11 +6,14 @@ load_dotenv()
 
 def callback(ch, method, properties, body):
     print(" [x] Received %r" % body.decode())
-    for t in range(int(body.decode())):
-        sys.stdout.write(f"\r Processing... ({str(t + 1)})")
-        sys.stdout.flush()
-        time.sleep(1)
-    print("\n Done Computing")
+    try:
+        for t in range(int(body.decode())):
+            sys.stdout.write(f"\r Processing... ({str(t + 1)})")
+            sys.stdout.flush()
+            time.sleep(1)
+        print("\n Done Computing")
+    except ValueError:
+        pass
     print("=============================================================")
 
 
