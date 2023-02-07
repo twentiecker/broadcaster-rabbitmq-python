@@ -43,7 +43,7 @@ channel.exchange_declare(
 
 result = channel.queue_declare(queue='', exclusive=True)
 queue_name = result.method.queue
-channel.queue_bind(exchange='logs', queue=queue_name)
+channel.queue_bind(exchange=exchange_name, queue=queue_name)
 
 # consume pesan (menerima)
 channel.basic_qos(prefetch_count=1)  # hanya akan memberikan satu tugas dulu sampe selesai
