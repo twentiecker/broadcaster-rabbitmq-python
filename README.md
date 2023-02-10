@@ -12,8 +12,8 @@ https://github.com/twentiecker/broadcaster-rabbitmq-python.git
 
 ## Demo Aplikasi
 
-Aplikasi ini menghasilkan dua aplikasi, yaitu broadcaster.exe dan receiver.exe. Broadcaster berperan sebagai pengirim pesan
-sedangkan Receiver berperan sebagai penerima pesan. Aplikasi demo berada pada folder <code>dist/</code>.
+Aplikasi ini menghasilkan dua aplikasi, yaitu broadcaster (broadcaster_win dan broadcaster_con.exe) dan receiver.exe. Broadcaster berperan sebagai pengirim pesan
+sedangkan Receiver berperan sebagai penerima pesan. Terdapat dua jenis aplikasi broadcaster yang sudah disediakan sebagai demo aplikasi, yaitu broadcaster_win (windows UI) dan broadcaster_con.exe (console UI). Aplikasi demo berada pada folder <code>dist/</code>.
 
 ## Setup RabbitMQ libraries
 
