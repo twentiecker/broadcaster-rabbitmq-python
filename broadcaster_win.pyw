@@ -77,11 +77,6 @@ app = tk.Tk()
 app.geometry("425x610")
 app.title("Broadcaster")
 
-# # membuat garis
-# C = tk.Canvas(height=230, width=300)
-# line = C.create_line(10, 170, 290, 170, fill="#a2a39c", width=2)
-# C.pack()
-
 # membuat label dan text tujuan
 lbl_tujuan = tk.Label(text="Tujuan Broadcast", state="disabled")
 lbl_tujuan.place(x=10, y=60)
@@ -94,8 +89,8 @@ lbl_pesan.place(x=150, y=60)
 txt_pesan = tk.Entry(state="disabled", width=43)
 txt_pesan.place(x=153, y=85)
 
-# membuat label dan list pesan
-lbl_list = tk.Label(text="List Pesan Terkirim", state="disabled")
+# membuat label dan daftar pesan
+lbl_list = tk.Label(text="Daftar Pesan Terkirim", state="disabled")
 lbl_list.place(x=10, y=195)
 txt_list = tk.Text(height=20, width=50, state="disabled")
 txt_list.place(x=10, y=220)
